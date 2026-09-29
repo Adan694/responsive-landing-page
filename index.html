@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A fully semantic, responsive landing page built for the TaskDesk Week 1 internship task."
+    />
+    <meta name="author" content="Amna Shahzad" />
+    <title>TaskDesk | Full Stack Intern Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="#hero" class="logo" aria-label="TaskDesk home">
+          <span class="logo-mark">TD</span>
+          <span class="logo-text">TaskDesk</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+          aria-label="Toggle menu"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <ul id="primary-menu" class="nav-menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact" class="btn btn-outline">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HERO SECTION ===== -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Full Stack Development Internship</p>
+            <h1 id="hero-title">Build, Learn, and Ship Real Products.</h1>
+            <p class="lead">
+              A modern responsive landing page crafted with semantic HTML5 and
+              CSS Flexbox, designed to showcase clean layout flows and
+              accessible structure.
+            </p>
+            <div class="hero-cta">
+              <a href="#features" class="btn btn-primary">Explore Features</a>
+              <a href="#about" class="btn btn-ghost">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="card-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-line"></div>
+              <div class="mockup-line short"></div>
+              <div class="mockup-block"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FEATURES SECTION ===== -->
+      <section id="features" class="features" aria-labelledby="features-title">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="features-title">Why This Layout Works</h2>
+            <p>
+              Semantic structure, responsive flex grids, and accessible
+              components.
+            </p>
+          </header>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🎯</div>
+              <h3>Semantic HTML5</h3>
+              <p>
+                Every element is chosen for meaning — header, nav, main,
+                section, article, footer.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">📱</div>
+              <h3>Fully Responsive</h3>
+              <p>
+                Mobile-first design with fluid breakpoints using Flexbox and CSS
+                Grid.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">♿</div>
+              <h3>Accessible</h3>
+              <p>
+                ARIA labels, keyboard navigation, and contrast-aware color
+                choices.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">⚡</div>
+              <h3>Fast & Lightweight</h3>
+              <p>Zero frameworks. Pure HTML, CSS, and vanilla JavaScript.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT SECTION ===== -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-text">
+            <h2 id="about-title">About This Project</h2>
+            <p>
+              This landing page was built as part of the Week 1 curriculum for
+              the Full Stack Development internship at DawoodTech.
+            </p>
+            <ul class="check-list">
+              <li>HTML5 semantic elements</li>
+              <li>Flexbox layout system</li>
+              <li>Viewport responsiveness</li>
+              <li>Clean, documented codebase</li>
+            </ul>
+          </div>
+          <div class="about-visual" aria-hidden="true">
+            <div class="stat-card">
+              <span class="stat-number">8</span>
+              <span class="stat-label">Weeks of learning</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Responsive</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TESTIMONIALS ===== -->
+      <section
+        id="testimonials"
+        class="testimonials"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="testimonials-title">What Interns Say</h2>
+          </header>
+
+          <div class="testimonial-grid">
+            <blockquote class="testimonial">
+              <p>
+                "The roadmap structure makes learning feel achievable, one week
+                at a time."
+              </p>
+              <footer>— <cite>Amna S., Full Stack Intern</cite></footer>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p>
+                "Semantic HTML finally clicked for me after building this
+                landing page."
+              </p>
+              <footer>— <cite>Ali R., Frontend Intern</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT / CTA ===== -->
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container contact-box">
+          <h2 id="contact-title">Ready to Get Started?</h2>
+          <p>Join the DawoodTech community and grow with fellow interns.</p>
+          <a href="mailto:hello@example.com" class="btn btn-primary"
+            >Get in Touch</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; <span id="year"></span> TaskDesk — Built by Amna Shahzad</p>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="#hero">Top</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
