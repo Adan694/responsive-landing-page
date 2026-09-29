@@ -2,10 +2,9 @@
 
 A fully semantic, responsive landing page built for **Week 1** of the Full Stack Development internship at **DawoodTech**.
 
-## 🔗 Live Links
-- **Live Demo:** https://your-demo-url.com
-- **GitHub Repo:** https://github.com/your-username/responsive-landing-page
-- **Swagger API Docs:** https://your-swagger-url.com  *(if applicable — confirm with supervisor)*
+## Live Links
+- **Live Demo:** https://responsive-landing-page-iota-rosy.vercel.app/
+- **GitHub Repo:** https://github.com/Adan694/responsive-landing-page
 
 ## 🎯 Objective
 Master HTML5 semantics, Flexbox layouts, and viewport responsiveness by building a production-style landing page from scratch.
@@ -28,7 +27,7 @@ responsive-landing-page/
 
 ### Option 1 — Open directly
 ```bash
-git clone https://github.com/your-username/responsive-landing-page.git
+git clone https://github.com/Adan694/responsive-landing-page
 cd responsive-landing-page
 open index.html    # macOS
 # or: start index.html  (Windows)

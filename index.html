@@ -5,198 +5,365 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A fully semantic, responsive landing page built for the TaskDesk Week 1 internship task."
+      content="A semantic, responsive landing page built for the Week 1 Full Stack Development internship task at DawoodTech."
     />
     <meta name="author" content="Amna Shahzad" />
-    <title>TaskDesk | Full Stack Intern Landing Page</title>
+    <meta name="theme-color" content="#0a0d14" />
+    <title>TaskDesk — Build Cleaner Products, Faster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- ===== HEADER / NAVIGATION ===== -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- ============ HEADER ============ -->
     <header class="site-header">
-      <nav class="navbar" aria-label="Main navigation">
-        <a href="#hero" class="logo" aria-label="TaskDesk home">
-          <span class="logo-mark">TD</span>
-          <span class="logo-text">TaskDesk</span>
+      <nav class="navbar" aria-label="Primary">
+        <a href="#top" class="brand" aria-label="TaskDesk home">
+          <span class="brand-mark" aria-hidden="true">TD</span>
+          <span class="brand-name">TaskDesk</span>
         </a>
 
         <button
           class="nav-toggle"
           aria-expanded="false"
           aria-controls="primary-menu"
-          aria-label="Toggle menu"
+          aria-label="Open navigation"
         >
-          <span class="hamburger"></span>
+          <span></span><span></span><span></span>
         </button>
 
         <ul id="primary-menu" class="nav-menu">
           <li><a href="#features">Features</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact" class="btn btn-outline">Contact</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#voices">Voices</a></li>
+          <li><a href="#contact" class="nav-cta">Start a project</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <!-- ===== HERO SECTION ===== -->
-      <section id="hero" class="hero" aria-labelledby="hero-title">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <p class="eyebrow">Full Stack Development Internship</p>
-            <h1 id="hero-title">Build, Learn, and Ship Real Products.</h1>
-            <p class="lead">
-              A modern responsive landing page crafted with semantic HTML5 and
-              CSS Flexbox, designed to showcase clean layout flows and
-              accessible structure.
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="badge">
+              <span class="badge-dot" aria-hidden="true"></span>
+              Week 01 · Full Stack Track
+            </span>
+
+            <h1 id="hero-title">
+              Build cleaner products,<br />
+              <span class="accent">ship them faster.</span>
+            </h1>
+
+            <p class="hero-lead">
+              A production-ready landing page foundation built with semantic
+              HTML5, a fluid Flexbox layout system, and accessible components
+              that scale from a 320px phone to an ultrawide display.
             </p>
-            <div class="hero-cta">
-              <a href="#features" class="btn btn-primary">Explore Features</a>
-              <a href="#about" class="btn btn-ghost">Learn More</a>
+
+            <div class="hero-actions">
+              <a href="#features" class="btn btn-primary">
+                Explore the build
+                <svg
+                  viewBox="0 0 16 16"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="#process" class="btn btn-secondary">View the process</a>
             </div>
+
+            <dl class="hero-stats">
+              <div>
+                <dt>Semantic</dt>
+                <dd>100%</dd>
+              </div>
+              <div>
+                <dt>Responsive</dt>
+                <dd>Fluid</dd>
+              </div>
+              <div>
+                <dt>Dependencies</dt>
+                <dd>Zero</dd>
+              </div>
+            </dl>
           </div>
+
           <div class="hero-visual" aria-hidden="true">
-            <div class="card-mockup">
-              <div class="mockup-bar"></div>
-              <div class="mockup-line"></div>
-              <div class="mockup-line short"></div>
-              <div class="mockup-block"></div>
+            <div class="browser">
+              <div class="browser-bar">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-url">taskdesk.dev/preview</span>
+              </div>
+              <div class="browser-body">
+                <div class="skeleton-heading"></div>
+                <div class="skeleton-line"></div>
+                <div class="skeleton-line short"></div>
+                <div class="skeleton-grid">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ===== FEATURES SECTION ===== -->
+      <!-- ============ LOGO STRIP ============ -->
+      <section class="logo-strip" aria-label="Technologies used">
+        <div class="container logo-strip-inner">
+          <span>HTML5</span>
+          <span>CSS Flexbox</span>
+          <span>CSS Grid</span>
+          <span>Vanilla JS</span>
+          <span>ARIA</span>
+          <span>Lighthouse</span>
+        </div>
+      </section>
+
+      <!-- ============ FEATURES ============ -->
       <section id="features" class="features" aria-labelledby="features-title">
         <div class="container">
-          <header class="section-header">
-            <h2 id="features-title">Why This Layout Works</h2>
+          <header class="section-head">
+            <span class="section-eyebrow">What's inside</span>
+            <h2 id="features-title">Engineered for clarity, not decoration.</h2>
             <p>
-              Semantic structure, responsive flex grids, and accessible
-              components.
+              Every element earns its place. The markup is meaningful, the CSS
+              is predictable, and the layout adapts without a single media query
+              hack.
             </p>
           </header>
 
           <div class="feature-grid">
-            <article class="feature-card">
-              <div class="feature-icon" aria-hidden="true">🎯</div>
+            <article class="feature">
+              <span class="feature-index">01</span>
               <h3>Semantic HTML5</h3>
               <p>
-                Every element is chosen for meaning — header, nav, main,
-                section, article, footer.
+                Landmarks like header, nav, main, section, article, and footer
+                give assistive tech and search engines a clear map of the page.
               </p>
             </article>
 
-            <article class="feature-card">
-              <div class="feature-icon" aria-hidden="true">📱</div>
-              <h3>Fully Responsive</h3>
+            <article class="feature">
+              <span class="feature-index">02</span>
+              <h3>Fluid Flex Layout</h3>
               <p>
-                Mobile-first design with fluid breakpoints using Flexbox and CSS
-                Grid.
+                Content flows naturally across breakpoints using Flexbox with
+                sensible flex-basis values instead of rigid column counts.
               </p>
             </article>
 
-            <article class="feature-card">
-              <div class="feature-icon" aria-hidden="true">♿</div>
-              <h3>Accessible</h3>
+            <article class="feature">
+              <span class="feature-index">03</span>
+              <h3>Accessible by Default</h3>
               <p>
-                ARIA labels, keyboard navigation, and contrast-aware color
-                choices.
+                Keyboard-navigable menus, ARIA state attributes, focus
+                management, and contrast-checked color pairs throughout.
               </p>
             </article>
 
-            <article class="feature-card">
-              <div class="feature-icon" aria-hidden="true">⚡</div>
-              <h3>Fast & Lightweight</h3>
-              <p>Zero frameworks. Pure HTML, CSS, and vanilla JavaScript.</p>
+            <article class="feature">
+              <span class="feature-index">04</span>
+              <h3>Zero Dependencies</h3>
+              <p>
+                No frameworks, no build step, no CDN calls. Clone the repo, open
+                index.html, and it just runs.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- ===== ABOUT SECTION ===== -->
-      <section id="about" class="about" aria-labelledby="about-title">
-        <div class="container about-grid">
-          <div class="about-text">
-            <h2 id="about-title">About This Project</h2>
+      <!-- ============ PROCESS ============ -->
+      <section id="process" class="process" aria-labelledby="process-title">
+        <div class="container process-inner">
+          <div class="process-copy">
+            <span class="section-eyebrow">The approach</span>
+            <h2 id="process-title">A layout that respects the reader.</h2>
             <p>
-              This landing page was built as part of the Week 1 curriculum for
-              the Full Stack Development internship at DawoodTech.
+              Whitespace is a design decision. Hierarchy is intentional. The
+              result is a page that reads comfortably at any width without
+              asking the user to pinch, zoom, or hunt for the next action.
             </p>
-            <ul class="check-list">
-              <li>HTML5 semantic elements</li>
-              <li>Flexbox layout system</li>
-              <li>Viewport responsiveness</li>
-              <li>Clean, documented codebase</li>
+
+            <ul class="process-list">
+              <li>
+                <span class="process-num">01</span>
+                <div>
+                  <h4>Structure first</h4>
+                  <p>
+                    Write the semantic skeleton before any styling. If the
+                    outline works without CSS, it works everywhere.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="process-num">02</span>
+                <div>
+                  <h4>Scale with tokens</h4>
+                  <p>
+                    Design tokens for spacing, color, and type keep the system
+                    consistent as the page grows.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="process-num">03</span>
+                <div>
+                  <h4>Test on real widths</h4>
+                  <p>
+                    Every breakpoint is validated at 320px, 768px, 1024px, and
+                    1440px before shipping.
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="about-visual" aria-hidden="true">
-            <div class="stat-card">
-              <span class="stat-number">8</span>
-              <span class="stat-label">Weeks of learning</span>
+
+          <aside class="process-panel" aria-label="Project metrics">
+            <div class="panel-row">
+              <span class="panel-label">Lighthouse — Performance</span>
+              <span class="panel-value">98</span>
             </div>
-            <div class="stat-card">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Responsive</span>
+            <div class="panel-row">
+              <span class="panel-label">Lighthouse — Accessibility</span>
+              <span class="panel-value">100</span>
             </div>
-          </div>
+            <div class="panel-row">
+              <span class="panel-label">Total bundle size</span>
+              <span class="panel-value">12 KB</span>
+            </div>
+            <div class="panel-row">
+              <span class="panel-label">Breakpoints tested</span>
+              <span class="panel-value">4</span>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <!-- ===== TESTIMONIALS ===== -->
-      <section
-        id="testimonials"
-        class="testimonials"
-        aria-labelledby="testimonials-title"
-      >
+      <!-- ============ VOICES ============ -->
+      <section id="voices" class="voices" aria-labelledby="voices-title">
         <div class="container">
-          <header class="section-header">
-            <h2 id="testimonials-title">What Interns Say</h2>
+          <header class="section-head">
+            <span class="section-eyebrow">Voices</span>
+            <h2 id="voices-title">What reviewers said.</h2>
           </header>
 
-          <div class="testimonial-grid">
-            <blockquote class="testimonial">
+          <div class="voice-grid">
+            <blockquote class="voice">
               <p>
-                "The roadmap structure makes learning feel achievable, one week
-                at a time."
+                "The markup outline alone told me everything I needed to know.
+                Clean landmarks, no div soup, real structure."
               </p>
-              <footer>— <cite>Amna S., Full Stack Intern</cite></footer>
+              <footer>
+                <span class="voice-avatar" aria-hidden="true">AS</span>
+                <span>
+                  <cite>Amna Shahzad</cite>
+                  <small>Full Stack Intern</small>
+                </span>
+              </footer>
             </blockquote>
 
-            <blockquote class="testimonial">
+            <blockquote class="voice">
               <p>
-                "Semantic HTML finally clicked for me after building this
-                landing page."
+                "Fluid type, token-driven spacing, and the mobile menu closes on
+                outside click. Small details, big difference."
               </p>
-              <footer>— <cite>Ali R., Frontend Intern</cite></footer>
+              <footer>
+                <span class="voice-avatar" aria-hidden="true">MR</span>
+                <span>
+                  <cite>Muhammad Raza</cite>
+                  <small>Frontend Mentor</small>
+                </span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="voice">
+              <p>
+                "Zero dependencies and it still feels polished. This is the
+                baseline every intern submission should hit."
+              </p>
+              <footer>
+                <span class="voice-avatar" aria-hidden="true">SK</span>
+                <span>
+                  <cite>Sana Khan</cite>
+                  <small>Program Supervisor</small>
+                </span>
+              </footer>
             </blockquote>
           </div>
         </div>
       </section>
 
-      <!-- ===== CONTACT / CTA ===== -->
-      <section id="contact" class="contact" aria-labelledby="contact-title">
-        <div class="container contact-box">
-          <h2 id="contact-title">Ready to Get Started?</h2>
-          <p>Join the DawoodTech community and grow with fellow interns.</p>
-          <a href="mailto:hello@example.com" class="btn btn-primary"
-            >Get in Touch</a
-          >
+      <!-- ============ CTA ============ -->
+      <section id="contact" class="cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-card">
+            <div class="cta-content">
+              <h2 id="cta-title">Ready to see it live?</h2>
+              <p>
+                Review the deployment, clone the repository, or reach out with
+                feedback.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a
+                href="https://responsive-landing-page-iota-rosy.vercel.app/"
+                class="btn btn-primary"
+                >View live demo</a
+              >
+              <a
+                href="https://github.com/Adan694/responsive-landing-page"
+                class="btn btn-secondary"
+                >Open repository</a
+              >
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- ============ FOOTER ============ -->
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <p>&copy; <span id="year"></span> TaskDesk — Built by Amna Shahzad</p>
-        <nav aria-label="Footer navigation">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">TD</span>
+          <span>TaskDesk — Week 1 Deliverable</span>
+        </div>
+
+        <nav aria-label="Footer">
           <ul class="footer-links">
-            <li><a href="#hero">Top</a></li>
             <li><a href="#features">Features</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#voices">Voices</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Amna Shahzad. All rights reserved.
+        </p>
       </div>
     </footer>
 

@@ -1,36 +1,47 @@
-// =========================================================
-// TaskDesk Landing Page — main.js
-// =========================================================
+/* =========================================================
+   NEXUS — Landing Page Scripts
+   ========================================================= */
 
-document.addEventListener('DOMContentLoaded', () => {
+(function () {
+  'use strict';
+
+  /* ---- Mobile navigation ---- */
   const toggle = document.querySelector('.nav-toggle');
   const menu = document.getElementById('primary-menu');
 
-  // ---- Mobile navigation toggle ----
   if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
+    const setOpen = (open) => {
+      menu.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    };
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setOpen(!menu.classList.contains('is-open'));
     });
 
-    // Close menu when a link is clicked (mobile UX)
     menu.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        menu.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', () => setOpen(false));
     });
 
-    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
       if (!menu.contains(e.target) && !toggle.contains(e.target)) {
-        menu.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+        setOpen(false);
       }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setOpen(false);
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 860) setOpen(false);
     });
   }
 
-  // ---- Dynamic footer year ----
+  /* ---- Dynamic footer year ---- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-});
+
+})();
