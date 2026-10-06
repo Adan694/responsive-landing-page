@@ -60,14 +60,6 @@ Everything runs without a server.
 3. Right-click `index.html` → **Open with Live Server**.
 4. The page reloads automatically when you save any file.
 
-### Option 3 — Python HTTP server
-
-```bash
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
-
 ## Screenshots
 
 ### Desktop (1440px)
