@@ -61,6 +61,39 @@
     --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ---------- Fonts ---------- */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../assets/fonts/inter-400.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../assets/fonts/inter-600.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../assets/fonts/inter-800.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../assets/fonts/jetbrains-mono-500.woff2") format("woff2");
+}
+
 /* ---------- 3. Base ---------- */
 html {
     scroll-behavior: smooth;
@@ -584,7 +617,7 @@ section {
     line-height: 1.6;
 }
 
-/* ---------- 10. Process ---------- */
+/* ---------- 10.---------- */
 .process {
     background: var(--bg-elevated);
     border-block: 1px solid var(--border);
@@ -651,7 +684,7 @@ section {
     border-radius: var(--r-sm);
 }
 
-.process-list h4 {
+.process-list h3 {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
