@@ -114,6 +114,12 @@ own width and needs to wrap on narrow viewports.
 
 Tested with Chrome DevTools Lighthouse on a production build (Vercel).
 
+
+- Performance: 98
+- Accessibility: 94
+- Best Practices: 100
+- SEO: 100
+
 ![Lighthouse report](assets/images/lighthouse.png)
 
 ## Intern notes
